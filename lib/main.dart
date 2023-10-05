@@ -11,9 +11,10 @@ class XylophoneApp extends StatelessWidget {
     );
   }
 
+  //Expanded widget to return
   Expanded buildKey(int soundNumber, Color color, String text) {
     return Expanded(
-        child: FilledButton(
+        child: ElevatedButton(
           child: Text(text),
           style: FilledButton.styleFrom(backgroundColor: color),
           onPressed: () {
